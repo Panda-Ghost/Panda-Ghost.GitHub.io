@@ -29,7 +29,7 @@
         }
 
         .a_light {
-            color: deepskyblue;
+            color: darkorange;
         }
 
         .soft_ui_p {
@@ -51,38 +51,38 @@
         }
 
         ._left {
-            float: left;
+            left:0px;
+            position: absolute;
             width: 400px;
         }
 
         ._right {
-            float: right;
+            position: absolute;
+            left: 430px;
             width: 500px;
         }
     </style>
 </head>
 
 <body class="pbg">
-    <br>
-    <div style="width:930px" class="cent">
-        <br>
-        <div class="soft_ui_p cent _left">
+    <div style="width:930px; position: relative;" class="cent">
+        <div class="soft_ui_p cent _left" style="height:300px;top:20px;">
             <div style="width:300px;" class="cent">
                 <br>
                 <h1 style="color:white;">
                     欢迎来到
-                    <span style="color:red">PandaGhost</span>
-                    的主页
+                    <span style="color:orange">PandaGhost</span>
+                    的个人主页
                 </h1>
                 <h3 style="color:white;">
                     Welcome to
-                    <span style="color:red">PandaGhost</span>
-                    's homepage
+                    <span style="color:orange">PandaGhost</span>
+                    's personal homepage
                     </h2>
             </div>
             <br>
         </div>
-        <div class="soft_ui_p cent _right" style="height: 500px;">
+        <div class="soft_ui_p cent _right" style="height: 500px;top: 20px;">
             <br>
             <div>
                 <h1 id="bbg">Contents | 目录</h1> </i>
@@ -91,6 +91,14 @@
                 <h2><a href="./blog" class="a_light">· Blog ｜ 博客</a></h1>
             </div>
             <br>
+        </div>
+        <div class="_left soft_ui_p" style="top:350px;height:140px">
+            <h1>
+                <span style="color:gold">杨苏成</span>最帅
+            </h1>
+            <h3>
+                不接受任何反驳
+            </h3>
         </div>
     </div>
 </body>
