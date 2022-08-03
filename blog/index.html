@@ -12,6 +12,12 @@
             text-align: center
         }
 
+        body{
+            background-image: url(../pic/bg1.png);
+            background-size: 100%, 100%;
+            background-attachment:fixed;
+        }
+
         a {
             text-decoration: none;
         }
@@ -48,20 +54,20 @@
             font-size: 24px;
             font-weight: normal;
             letter-spacing: 0em;
-            color: #3D3D3D;
+            color: #000000;
         }
 
         #h1Title {
             position: absolute;
-            left: 65px;
+            left: 40px;
             top: 3px;
-            width: 408px;
+            width: 458px;
             height: 71px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 48px;
             font-weight: normal;
             letter-spacing: 0em;
-            color: #3D3D3D;
+            color: #000000;
         }
 
         #divPage {
@@ -74,18 +80,24 @@
             box-sizing: border-box;
             border: 2px solid #000000;
         }
+        #divOut{
+            background-color:rgba(255, 255, 255, 0.6);
+        }
     </style>
 </head>
 
 <body class="cent">
-    <div class='cent' style="position:relative;width:1000px;">
+    <div id="divOut" class='cent'  style="position:relative;width:1000px;height:2900px">
+
         <div id="divHome">
             <a id="aHome" href="https://panda-ghost.github.io"><b>Home</b></a>
         </div>
         <div id="divTitle">
-            <h1 id="h1Title"><b>PandaGhost'Blog</b></h1>
+            <h1 id="h1Title"><b>PandaGhost's Blog</b></h1>
         </div>
-        <div id="divPage"></div>
+        <div id="divPage">
+            <h1>暂无</h1>
+        </div>
     </div>
 </body>
 
