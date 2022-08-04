@@ -89,6 +89,24 @@
 </head>
 
 <body class="cent">
+    <script>
+        if(confirm("不要外传，同意请点“确认”，不同意请点“取消”")){
+
+        }else{
+            window.location.replace('https://panda-ghost.github.io')
+        }
+        document.addEventListener('selectstart',function(e){
+            e.preventDefault();  
+        });
+        document.addEventListener('contextmenu',function(e){
+            e.preventDefault();  // 阻止默认事件
+        });
+        document.addEventListener('keydown',function(e){
+            if(e.key == 'F12'){
+                e.preventDefault(); // 如果按下键F12,阻止事件
+            }
+        });
+    </script>
     <div id="divOut" class='cent'>
 
         <div id="divHome">
@@ -99,8 +117,7 @@
         </div>
         <div id="divPage">
             <br>
-            <h1>救救我</h1>
-            <h1>临平区树兰实验学校暑假又双叒叕开课了(2022/8/5)</h1>
+            <h1>临平区树兰实验学校暑假又双叒叕开始<strike> 上课 </strike>夏令营了(2022/8/5)</h1>
             <p>前面放暑假后，隔了几天就又回校了</p>
             <p>在学校待了几天，好像因为学校不愿意让SY班等（类似普通班）上</p>
             <p>让我们JS班（类似重点班）出去逛了一会儿，以骗得SY班回家</p>
@@ -112,8 +129,20 @@
             <p>我要疯掉了</p>
             <p>啊哈哈哈哈哈哈哈哈哈啊哦哦</p>
             <p>呼呼呼呼呼呼哈哈哈哈嘿嘿</p>
-            <p>不要外传，求求你们了</p>
+            <p>我只是哭诉一下，不要外传，求求你们了</p>
             <p>—— 2022/8/3 晚</p>
+            <script>
+                console.log("我**");
+                s="  #         #      #        #    \n"+
+                  "  #         #       #      #     \n"+
+                  "#####       #        #    #      \n"+
+                  " ###  ### ####    ############   \n"+
+                  "# # #  #  # #                    \n"+
+                  "# # # # #   #      ##########    \n"+
+                  "# # #                            \n"+
+                  "  #        ##    ##############  \n"
+                console.log(s);
+            </script>
         </div>
     </div>
 </body>
