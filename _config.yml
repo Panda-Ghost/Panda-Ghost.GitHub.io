@@ -3,4 +3,4 @@ description: 一名 ZJ 初三 OIer 的博客
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme
-bgimg: pic/bg1.jpeg
+bgimg: https://panda-ghost.github.io/pic/bg1.jpeg
