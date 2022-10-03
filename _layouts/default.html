@@ -8,7 +8,10 @@
     {% include head-custom.html %}
     <style>
         header{
-            background-image: url('{{ site.bgimg }}')
+            margin:0px;
+            background: url( '{{ site.bgimg }}') no-repeat;
+            background-size:100% 100%;
+            background-attachment:fixed;
         }
     </style>
 {% seo %}
@@ -21,7 +24,7 @@
         <a id="a-title" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <h2 style="color:greenyellow">{{ site.description | default: site.github.project_tagline }}</h2>
 
         <section id="downloads">
           {% if site.show_downloads %}
