@@ -2,8 +2,14 @@
 
 ## 博客介绍
 
+大概就是写点笔记什么的
+
 ## 文章分类
 
 ### 其他
 
 - [CSP-S 2022 游记](/passages/csp-s-2022-you-ji)
+
+## 有用的东西
+
+- [算法学习笔记（目录） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/105467597)
