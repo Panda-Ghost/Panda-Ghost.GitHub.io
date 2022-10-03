@@ -4,4 +4,4 @@
 
 ### 其他
 
-- [CSP-S 2022 游记]()
+- [CSP-S 2022 游记](/passages/csp-s-2022-you-ji)
