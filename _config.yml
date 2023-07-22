@@ -182,7 +182,8 @@ analytics:
 markdown    : kramdown
 highlighter : rouge
 permalink   : date
-
+kramdown:
+  math_engine: MathJax
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
