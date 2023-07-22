@@ -80,5 +80,3 @@ tags: STL
 - for_each
 
 [万字长文 | STL 算法总结 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/381607411)
-
-
