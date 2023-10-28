@@ -65,8 +65,11 @@
       .then((res) => res.json())
       .then((data) => {
         let hitokoto = document.getElementById("content");
-        hitokoto.innerHTML = `<p align="center" >${data.hitokoto}</p><p  align="right">——${data.from}</p>` 
-        
+        if(data.from_who==null){
+          hitokoto.innerHTML = `<p align="center" >${data.hitokoto}</p><p  align="right">——${data.from}</p>` 
+        }else{
+          hitokoto.innerHTML = `<p align="center" >${data.hitokoto}</p><p  align="right">——${data.from_who}-${data.from}</p>` 
+        }
       }); 
     }
 
