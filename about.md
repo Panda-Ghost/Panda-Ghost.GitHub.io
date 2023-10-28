@@ -1,4 +1,4 @@
-something
+# 关于
 
 ## 有用的东西
 
@@ -8,6 +8,7 @@ something
 - [洛谷 - 计算机科学教育新生态 (luogu.com.cn)](https://www.luogu.com.cn/)
 - [AcWing](https://www.acwing.com/)
 - [OI Wiki (oi-wiki.org)](https://oi-wiki.org/)
+- [一言 (panda-ghost.github.io)](https://panda-ghost.github.io/hitokoto.html)
 
 ## 友链
 
