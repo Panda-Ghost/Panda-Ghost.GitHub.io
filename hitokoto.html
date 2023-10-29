@@ -65,7 +65,7 @@
       .then((res) => res.json())
       .then((data) => {
         let hitokoto = document.getElementById("content");
-        if(data.from_who==null){
+        if(data.from_who==null||data.from==data.from_who){
           hitokoto.innerHTML = `<p align="center" >${data.hitokoto}</p><p  align="right">——${data.from}</p>` 
         }else{
           hitokoto.innerHTML = `<p align="center" >${data.hitokoto}</p><p  align="right">——${data.from_who}-${data.from}</p>` 
