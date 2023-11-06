@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo {
+            position: absolute;
+            top: 100px;
+        }
+
+        .box {
+            width: 400px;
+            height: 40px;
+            border: 2px solid black;
+            margin: auto;
+        }
+
+        .input {
+            float: left;
+            width: 204px;
+            /*宽400*/
+            height: 38px;
+            /*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
+            outline: none;
+            border: none;
+            /*取消文本框内外边框*/
+        }
+
+        .button {
+            float: left;
+            width: 96px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            /*将按钮背景设置为红色，字体设置为白*/
+            border: none;
+            outline: none;
+            /*取消边框和外边框将按钮边框去掉*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="text" class="input" placeholder="请输入题目ID" id="in">
+            <!--placeholder是文本框中的提示文字-->
+            <input id="searchLuogu" type="button" value="洛谷" class="button">
+            <input id="searchXoj" type="button" value="XOJ" class="button">
+        </div>
+        <script type="text/javascript">
+            const buttonLG = document.getElementById("searchLuogu");
+            buttonLG.addEventListener("click", toLuogu);
+            function toLuogu(){
+                window.open("https://www.luogu.com.cn/problem/"+document.getElementById("in").value);
+            }
+            const buttonX = document.getElementById("searchXoj");
+            buttonX.addEventListener("click", toXoj);
+            function toXoj(){
+                window.open("https://xoj.red/problem/"+document.getElementById("in").value);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
