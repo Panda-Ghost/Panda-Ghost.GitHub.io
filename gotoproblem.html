@@ -19,12 +19,23 @@
             width: 300px;
             height: 30px;
             border: 2px solid black;
-            margin: auto;
+            /* margin: auto; */
         }
 
         .input {
             float: left;
             width: 200px;
+            /*宽400*/
+            height: 28px;
+            /*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
+            outline: none;
+            border: none;
+            /*取消文本框内外边框*/
+        }
+
+        .input2 {
+            float: left;
+            width: 248px;
             /*宽400*/
             height: 28px;
             /*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
@@ -56,6 +67,11 @@
             <input id="searchLuogu" type="button" value="洛谷" class="button">
             <input id="searchXoj" type="button" value="XOJ" class="button">
         </div>
+        <br/>
+        <div class="box">
+            <input type="text" class="input2" placeholder="请输入网址" id="in2">
+            <input id="goto" type="button" value="GO" class="button">
+        </div>
         <script type="text/javascript">
             const buttonLG = document.getElementById("searchLuogu");
             buttonLG.addEventListener("click", toLuogu);
@@ -66,6 +82,11 @@
             buttonX.addEventListener("click", toXoj);
             function toXoj(){
                 window.open("https://xoj.red/problem/"+document.getElementById("in").value);
+            }
+            const buttonGOTO = document.getElementById("goto");
+            buttonGOTO.addEventListener("click", Goto);
+            function Goto(){
+                window.location.href=document.getElementById("in2").value;
             }
         </script>
     </div>
