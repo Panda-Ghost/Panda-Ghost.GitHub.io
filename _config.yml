@@ -214,6 +214,7 @@ defaults:
         toc: true
       show_edit_on_github: true
       show_subscribe: false
+      show_excerpt: false
       pageview: true
 
 
