@@ -50,3 +50,7 @@ header:
       tr      : &TR       Hakkında
       # @end locale config
     url: /about.html
+    
+  - titles:
+      zh-Hans : &ZH_HANS  一言
+    url: /hitokoto.html
