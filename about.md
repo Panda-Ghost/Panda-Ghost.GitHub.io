@@ -1,8 +1,9 @@
 ---
 title: 关于
+mode: immersive
 article_header:
-  type: cover
-  image: 
+  type: overlay
+  background_image: 
     src: ./pic/PandaGhost.png
 ---
 
