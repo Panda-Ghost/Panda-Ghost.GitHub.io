@@ -61,7 +61,7 @@
   </div>
   <script>
     function getData(){
-        fetch("https://v1.hitokoto.cn/")
+        fetch("https://v1.hitokoto.cn/?c=k&c=l")
       .then((res) => res.json())
       .then((data) => {
         let hitokoto = document.getElementById("content");
