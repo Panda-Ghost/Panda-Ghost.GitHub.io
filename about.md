@@ -1,12 +1,5 @@
 ---
 title: 关于
-mode: immersive
-header:
-  theme: dark
-article_header:
-  type: overlay
-  theme: dark
-  background_color: '#123123'
 ---
 
 ## 有用的东西
