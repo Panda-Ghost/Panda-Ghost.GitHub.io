@@ -1,5 +1,9 @@
 ---
 title: 关于
+article_header:
+  type: cover
+  image: 
+    src: ./pic/PandaGhost.png
 ---
 
 ## 有用的东西
