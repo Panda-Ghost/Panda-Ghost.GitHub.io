@@ -54,7 +54,6 @@ layout: page
 <body>
   <div class="container">
     <div class="content" id="content"></div>
-    <button class="button" id="button">换一个</button>
   </div>
   <script>
     function getData(){
@@ -72,7 +71,7 @@ layout: page
 
     document.addEventListener('DOMContentLoaded', function() {
       getData();
-      document.getElementById('button').addEventListener('click', function() {
+      document.getElementById('content').addEventListener('click', function() {
         getData();
       });
     });
