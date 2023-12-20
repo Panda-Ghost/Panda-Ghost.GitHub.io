@@ -184,6 +184,7 @@ highlighter : rouge
 permalink   : date
 kramdown:
   math_engine: MathJax
+usemath     : latex
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
