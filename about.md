@@ -43,3 +43,7 @@ title: 关于
 - [欢迎来到黄天瑞的个人主页。- tianrui-huang.github.io](https://tianrui-huang.github.io/)
 - [ShwBlog (shwst.one)](https://shwst.one/)
 - [Mekdull's Blog](https://mekdull.netlify.app/)
+
+## 本站的 GitHub 仓库
+
+- [Click Here](https://github.com/Panda-Ghost/Panda-Ghost.GitHub.io/)
