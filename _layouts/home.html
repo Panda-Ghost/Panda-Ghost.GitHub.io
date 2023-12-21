@@ -33,13 +33,7 @@ articles:
   show_readmore: false
   show_info: true
 ---
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
-<script>
-  {%- include scripts/home.js -%}
-</script>
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
 
 <h2>历史上的今天</h2>
 <span id='year'>可爱捏</span>年，<span id='event'>可爱捏。</span>
@@ -66,5 +60,14 @@ articles:
       document.getElementById('event').innerHTML = `${event.title.slice(event.title.indexOf(':') + 1)}`;
     });
 </script>
+
+
+<div class="layout--home">
+  {%- include paginator.html -%}
+</div>
+<script>
+  {%- include scripts/home.js -%}
+</script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 
 {{ content }}
