@@ -1,5 +1,6 @@
 ---
 title: 历史上的今天
+tags: 其他
 ---
 
 <span id='year'>可爱捏</span>年，<span id='event'>可爱捏。</span>
