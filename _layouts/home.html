@@ -33,10 +33,13 @@ articles:
   show_readmore: false
   show_info: true
 ---
-
-
-<h2>历史上的今天</h2>
-<span id='year'>可爱捏</span>年，<span id='event'>可爱捏。</span>
+<div class="layout--home">
+  {%- include paginator.html -%}
+</div>
+<script>
+  {%- include scripts/home.js -%}
+</script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 
 <script>
   let today = new Date();
@@ -56,18 +59,9 @@ articles:
     .then((response) => response.json())
     .then((data) => {
       let event = data[Math.floor(today.getFullYear()%data.length)];
-      document.getElementById('year').innerHTML = `${event.year}`;
-      document.getElementById('event').innerHTML = `${event.title.slice(event.title.indexOf(':') + 1)}`;
+      let inner = `<h2>历史上的今天</h2><p>${event.year}年，${event.title.slice(event.title.indexOf(':') + 1)}</p>`;
+      document.getElementById('articles_top').innerHTML=inner
     });
 </script>
-
-
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
-<script>
-  {%- include scripts/home.js -%}
-</script>
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 
 {{ content }}
