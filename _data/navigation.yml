@@ -23,7 +23,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Arşivdekiler
       # @end locale config
-    url: /archive.html
+    url: /archive
 
   - titles:
       # @start locale config
@@ -49,10 +49,10 @@ header:
       fr-LU   : *FR
       tr      : &TR       Hakkında
       # @end locale config
-    url: /about.html
+    url: /about
     
   - title: 一言
-    url: /hitokoto.html
+    url: /hitokoto
     
   - title: GitHub
     url: https://github.com/Panda-Ghost/Panda-Ghost.GitHub.io
