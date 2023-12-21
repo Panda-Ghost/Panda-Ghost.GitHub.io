@@ -1,7 +1,5 @@
 ---
 title: 关于
-show_author_profile: true
-show_title: false
 ---
 
 ## 历史上的今天
