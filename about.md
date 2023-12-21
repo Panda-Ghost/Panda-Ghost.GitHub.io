@@ -1,6 +1,35 @@
 ---
 title: 关于
+show_author_profile: true
+show_title: false
 ---
+
+## 历史上的今天
+
+<p id='todinhis'>出错了捏</p>
+
+<script>
+  let today = new Date();
+  let path = ''
+  
+  if (today.getMonth() < 9) {
+    path += '0'
+  }
+  path += `${(today.getMonth() + 1)}`
+
+  if (today.getDate() < 10) {
+    path += '0'
+  }
+  path += `${today.getDate()}`
+  
+  fetch(`https://panda-ghost.github.io/todayinhistory/${path}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      let event = data[Math.floor(today.getFullYear()%data.length)];
+      let inner = `${event.year}年的今天，${event.title.slice(event.title.indexOf(':') + 1)}`;
+      document.getElementById('todinhis').innerHTML=inner
+    });
+</script>
 
 ## 有用的东西
 
@@ -10,9 +39,9 @@ title: 关于
 - [洛谷 - 计算机科学教育新生态 (luogu.com.cn)](https://www.luogu.com.cn/)
 - [AcWing](https://www.acwing.com/)
 - [OI Wiki (oi-wiki.org)](https://oi-wiki.org/)
-- [一言 (panda-ghost.github.io)](https://panda-ghost.github.io/hitokoto.html)
 
 ## 友链
 
 - [欢迎来到黄天瑞的个人主页。- tianrui-huang.github.io](https://tianrui-huang.github.io/)
 - [ShwBlog (shwst.one)](https://shwst.one/)
+- [Mekdull's Blog](https://mekdull.netlify.app/)
