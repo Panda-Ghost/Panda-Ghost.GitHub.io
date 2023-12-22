@@ -23,7 +23,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Arşivdekiler
       # @end locale config
-    url: /archive
+    url: /archive.html
 
   - titles:
       # @start locale config
@@ -49,7 +49,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Hakkında
       # @end locale config
-    url: /about
+    url: /about.html
     
   - title: 一言
-    url: /hitokoto
+    url: /hitokoto.html
