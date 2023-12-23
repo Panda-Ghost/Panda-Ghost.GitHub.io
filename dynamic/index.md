@@ -15,7 +15,7 @@ layout: article
     }
     function print(data){
         let i;
-        let txt="";
+        let txt="<hr></hr>";
         data.sort(compare);
         for(i in data){
             console.log(data[i]);
