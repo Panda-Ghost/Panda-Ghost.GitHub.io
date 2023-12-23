@@ -1,5 +1,7 @@
 ---
 layout: article
+title: 动态
+hide_title: true
 ---
 
 <div id="content">加载中...</div>
