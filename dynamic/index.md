@@ -14,6 +14,7 @@ layout: article
             var day = hour * 24;
             var halfamonth = day * 15;
             var month = day * 30;
+            var year = day * 365;
             // time = time.replace(/\-/g,"/");//把 - 替换为 / ，但在这没必要，其他地方可以用用
             var sTime = time;//把时间pretime的值转为时间戳
             var now = new Date().getTime();//获取当前时间的时间戳
@@ -21,33 +22,38 @@ layout: article
             if(diffValue < 0){
                 return false;
             }
+            var yearC = diffValue/year;
             var monthC = diffValue/month;
             var weekC = diffValue/(7*day);
             var dayC =diffValue/day;
             var hourC =diffValue/hour;
             var minC =diffValue/minute;
+            if(yearC>=1){
+                // console.log(parseInt(yearC) + "年前");
+                return parseInt(yearC) + "年前";
+            }
             if(monthC>=1){
                 // console.log(parseInt(monthC) + "个月前");
-                return parseInt(monthC) + "个月前"
+                return parseInt(monthC) + "个月前";
             }
             else if(weekC>=1){
                 // console.log(parseInt(weekC) + "周前")
-                return parseInt(weekC) + "周前"
+                return parseInt(weekC) + "周前";
             }
             else if(dayC>=1){
                 // console.log(parseInt(dayC) +"天前")
-                return parseInt(dayC) +"天前"
+                return parseInt(dayC) +"天前";
             }
             else if(hourC>=1){
                 // console.log(parseInt(hourC) +"个小时前")
-                return parseInt(hourC) +"个小时前"
+                return parseInt(hourC) +"个小时前";
             }
             else if(minC>=1){
                 // console.log(parseInt(minC) +"分钟前")
-                return parseInt(minC) +"分钟前"
+                return parseInt(minC) +"分钟前";
             }else{
-                console.log("刚刚")
-                return "刚刚"
+                // console.log("刚刚")
+                return "刚刚";
             }   
         }   
     }
