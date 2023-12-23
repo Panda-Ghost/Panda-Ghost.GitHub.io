@@ -3,6 +3,9 @@ layout: article
 title: 关于
 show_author_profile: true
 ---
+
+---
+
 ## 历史上的今天
 
 <p id='todinhis'>出错了捏</p>
