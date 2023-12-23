@@ -51,5 +51,8 @@ header:
       # @end locale config
     url: /about.html
     
+  - title: 动态
+    url: /dynamic.html
+
   - title: 一言
     url: /hitokoto.html

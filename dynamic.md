@@ -74,7 +74,7 @@ layout: article
         }
         document.getElementById("content").innerHTML=txt;
     }
-    fetch("./data.json")
+    fetch("https://panda-ghost.github.io/dynamicdata/data.json")
         .then((res) => res.json())
         .then((data) => print(data))
 </script>
