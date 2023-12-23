@@ -1,0 +1,31 @@
+<!-- ---
+layout: page
+--- -->
+
+<div id="content"></div>
+
+<script>
+    function post(str){
+        let date=new Date();
+        let res={time: date.getTime(), content: str};
+        console.log(JSON.stringify(res))
+    }
+    function compare(a, b){
+        return b.time - a.time;
+    }
+    function print(data){
+        let i;
+        let txt="";
+        data.sort(compare);
+        for(i in data){
+            console.log(data[i]);
+            let time=data[i].time;
+            let content=data[i].content;
+            txt += `<ul class="right-col menu"><li><i class="far fa-clock" /><span>${time}</span></li></ul><p>${content}</p>`
+        }
+        document.getElementById("content").innerHTML=txt;
+    }
+    fetch("./data.json")
+        .then((res) => res.json())
+        .then((data) => print(data))
+</script>
