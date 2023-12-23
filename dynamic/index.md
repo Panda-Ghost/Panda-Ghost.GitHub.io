@@ -19,9 +19,10 @@ layout: article
         data.sort(compare);
         for(i in data){
             console.log(data[i]);
-            let time=data[i].time;
+            let time=Date(data[i].time);
+            let date=` ${time.getFullYear()}年 ${time.getMonth()+1}月${time.getDate()}日 ${time.getHours()}:${time.getMinutes()}`;
             let content=data[i].content;
-            txt += `<i class="far fa-clock"></i><span>${time}</span><p>${content}</p><hr></hr>`
+            txt += `<i class="far fa-clock"></i><span>${date}</span><p>${content}</p><hr></hr>`
         }
         document.getElementById("content").innerHTML=txt;
     }
