@@ -21,9 +21,7 @@ highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "t
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : PandaGhost's Blog
-description: > # this means to ignore newlines until "Language & timezone"
-  PandaGhost 的秘密基地
-
+description: PandaGhost 的秘密基地 # this means to ignore newlines until "Language & timezone"
 
 ## => Language and Timezone
 ##############################
