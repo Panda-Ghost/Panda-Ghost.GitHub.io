@@ -127,12 +127,13 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : 91ec2fe2fdbc9f3f2196 # GitHub Application Client ID
+    clientSecret: 27189526d3722c57f75879a35b8284fe48b51c30 # GitHub Application Client Secret
+    repository  : Panda-Ghost.GitHub.io # GitHub repo
+    owner       : Panda-Ghost # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
+      - Panda-Ghost
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
