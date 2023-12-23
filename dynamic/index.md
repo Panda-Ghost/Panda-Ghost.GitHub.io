@@ -36,21 +36,17 @@ layout: article
                 // console.log(parseInt(monthC) + "个月前");
                 return parseInt(monthC) + "个月前";
             }
-            else if(weekC>=1){
-                // console.log(parseInt(weekC) + "周前")
-                return parseInt(weekC) + "周前";
-            }
             else if(dayC>=1){
                 // console.log(parseInt(dayC) +"天前")
-                return parseInt(dayC) +"天前";
+                return parseInt(dayC) + "天前";
             }
             else if(hourC>=1){
-                // console.log(parseInt(hourC) +"个小时前")
-                return parseInt(hourC) +"个小时前";
+                // console.log(parseInt(hourC) +"小时前")
+                return parseInt(hourC) + "小时前";
             }
             else if(minC>=1){
                 // console.log(parseInt(minC) +"分钟前")
-                return parseInt(minC) +"分钟前";
+                return parseInt(minC) + "分钟前";
             }else{
                 // console.log("刚刚")
                 return "刚刚";
