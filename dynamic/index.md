@@ -74,7 +74,7 @@ layout: article
             let time=new Date(data[i].time);
             let date=` ${time.getFullYear()}年 ${time.getMonth()+1}月${time.getDate()}日 ${time.getHours()}:${time.getMinutes()}`;
             let content=data[i].content;
-            txt += `<span><strong>PandaGhost </strong></span><i class="fa-solid fa-clock" style="color:gray"></i><span style="color:gray">${transform(data[i].time)}</span><p>${content}</p><hr></hr>`
+            txt += `<span><strong>PandaGhost </strong></span><i class="fa-solid fa-clock" style="color:gray"></i><span style="color:gray"> ${transform(data[i].time)}</span><p>${content}</p><hr></hr>`
         }
         document.getElementById("content").innerHTML=txt;
     }
