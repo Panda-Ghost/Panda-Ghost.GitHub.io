@@ -2,7 +2,7 @@
 layout: article
 ---
 
-<div id="content"></div>
+<div id="content">可爱捏</div>
 
 <script>
     function post(str){
