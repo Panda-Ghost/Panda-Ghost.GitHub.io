@@ -4,6 +4,8 @@ title: 动态
 show_title: false
 ---
 
+<script src="https://fastly.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.js"></script>
+
 <div id="content">加载中...</div>
 
 <script>
@@ -65,13 +67,14 @@ show_title: false
     }
     function print(data){
         let i;
+        let md=window.markdownit();
         let txt="<hr></hr>";
         data.sort(compare);
         for(i in data){
             console.log(data[i]);
             let time=new Date(data[i].time);
             let date=` ${time.getFullYear()}年 ${time.getMonth()+1}月${time.getDate()}日 ${time.getHours()}:${time.getMinutes()}`;
-            let content=data[i].content;
+            let content=md.render(data[i].content);
             txt += `<span><strong>PandaGhost </strong></span><i class="fa-solid fa-clock" style="color:gray"></i><span style="color:gray"> ${transform(data[i].time)}</span><p>${content}</p><hr></hr>`
         }
         document.getElementById("content").innerHTML=txt;
