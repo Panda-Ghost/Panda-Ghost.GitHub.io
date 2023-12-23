@@ -21,7 +21,7 @@ layout: page
             console.log(data[i]);
             let time=data[i].time;
             let content=data[i].content;
-            txt += `<center><i class="far fa-clock"></i><span>${time}</span></center><p>${content}</p>`
+            txt += `<ul class="left-col menu"><li><i class="far fa-clock"></i><span>${time}</span></li></ul></center><p>${content}</p>`
         }
         document.getElementById("content").innerHTML=txt;
     }
