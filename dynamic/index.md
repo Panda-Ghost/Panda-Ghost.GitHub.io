@@ -22,7 +22,7 @@ layout: article
             let time=new Date(data[i].time);
             let date=` ${time.getFullYear()}年 ${time.getMonth()+1}月${time.getDate()}日 ${time.getHours()}:${time.getMinutes()}`;
             let content=data[i].content;
-            txt += `<div style="color:gray"><i class="fa-solid fa-clock"></i><span><strong>${date}</strong></span></div><p>${content}</p><hr></hr>`
+            txt += `<div style="color:gray"><i class="fa-solid fa-clock"></i><span>发布于${date}</span></div><p>${content}</p><hr></hr>`
         }
         document.getElementById("content").innerHTML=txt;
     }
