@@ -116,8 +116,26 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: giscus # false (default), "disqus", "gitalk", "valine", "custom"
 
+  giscus:
+    enable: true
+    repo: Panda-Ghost/Panda-Ghost.GitHub.io
+    repo_id: R_kgDOHvqjOg
+    category: Announcements
+    category_id: DIC_kwDOHvqjOs4Cb-4S
+  # Available values: pathname | url | title | og:title
+    mapping: pathname
+  # Available values: 0 | 1 
+    reactions_enabled: 1
+    # Available values: 0 | 1 
+    emit_metadata: 1
+    # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
+    theme: preferred_color_scheme
+    # Available values: en | zh-CN
+    lang: zh-CN
+    # Available value: anonymous
+    crossorigin: anonymous
   ## Disqus
   disqus:
     shortname: # the Disqus shortname for the site
