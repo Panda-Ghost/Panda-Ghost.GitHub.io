@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: articlenoc
 title: 动态
 show_title: false
 ---
