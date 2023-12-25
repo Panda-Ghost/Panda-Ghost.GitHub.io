@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: articlenoc
 title: 关于
 show_author_profile: true
 ---
