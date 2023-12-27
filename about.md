@@ -41,6 +41,7 @@ show_author_profile: true
 - [OI Wiki (oi-wiki.org)](https://oi-wiki.org/)
 - [Font Awesome](https://fontawesome.com/)
 - [奇趣网站收藏家](https://fuun.fun/)
+- [colorate](https://colorate.azurewebsites.net/)
 
 ## 友链
 
