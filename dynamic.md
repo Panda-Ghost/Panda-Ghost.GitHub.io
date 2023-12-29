@@ -70,13 +70,7 @@ show_title: false
         let md=window.markdownit();
         let txt="<hr></hr>";
         data.sort(compare);
-        for(i in data){
-            console.log(data[i]);
-            let time=new Date(data[i].time);
-            let date=` ${time.getFullYear()}-${time.getMonth()+1}-${time.getDate()} ${time.getHours()}:${time.getMinutes()}`;
-            let content=md.render(data[i].content);
-            txt += `<span><strong>PandaGhost </strong></span><i class="fa-solid fa-clock" style="color:gray" title="${date}"></i><span style="color:gray" title="${date}"> ${transform(data[i].time)}</span><p>${content}</p><hr></hr>`
-        }
+        
         document.getElementById("content").innerHTML=txt;
     }
     fetch("https://panda-ghost.github.io/dynamicdata/data.json")
