@@ -51,6 +51,7 @@ show_author_profile: true
 - [TzBlog - Tz的个人博客](https://tzblog.tech/)
 - [AlexEinstein's Blog](https://alexeinstein.github.io/)
 - [Qiuuu's Blog](https://qiuuu1504.github.io)
+- [shijihong's Blog](https://shijihong2008.github.io)
 
 
 ## 本站的 GitHub 仓库
