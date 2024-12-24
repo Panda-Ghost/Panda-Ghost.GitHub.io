@@ -46,7 +46,7 @@ show_author_profile: true
 ## 友链
 
 - [tianrui-huang.github.io](https://tianrui-huang.github.io/)
-- [ShwBlog](https://shwst.one/)
+- [ShwBlog](https://shwstone.cn/)
 - [Mekdull's Blog](https://mekdull.netlify.app/)
 - [TzBlog - Tz的个人博客](https://tzblog.tech/)
 - [AlexEinstein's Blog](https://alexeinstein.github.io/)
