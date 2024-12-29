@@ -2,6 +2,7 @@
 layout: articlenoc
 title: 动态
 show_title: false
+lightbox: true
 ---
 
 <script src="https://fastly.jsdelivr.net/npm/markdown-it@14.0.0/dist/markdown-it.js"></script>
