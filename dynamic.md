@@ -67,7 +67,7 @@ show_title: false
     }
     function print(data){
         let i;
-        let md=window.markdownit();
+        let md=window.markdownit({html:true});
         let txt="<hr></hr>";
         data.sort(compare);
         for(i in data){
